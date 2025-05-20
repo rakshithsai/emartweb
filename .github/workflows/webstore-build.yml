@@ -10,15 +10,15 @@ jobs:
           -name:'Build and publish'
            runs-on:ubuntu-latest
 
-        steps:
+    steps:
             -name: checkout
-            uses: actions/checkout@4.2.2
+             uses: actions/checkout@4.2.2
 
             -name: restore
-            run: dotnet restore
+             run: dotnet restore
               
             -name: build
-            run: dotnet build--configurations release
+             run: dotnet build--configurations release
 
             -name: publish
-            run: dotnet publish--configuration Realse-o./webstore
+             run: dotnet publish--configuration Realse-o./webstore
